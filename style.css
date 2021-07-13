@@ -1,4 +1,150 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 *{
-    padding;0;
+    padding: 0;
     margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* custom components */
+:root{
+    --button-bg:#cc0505;
+    --button-color:white;
+    --button-hover-bg:white;
+    --button-hover-color:#cc0505;
+    font-size: 10px;
+}
+/* default-strtings */
+a{
+    text-decoration: none;
+}
+
+a,
+p,
+li,
+span{
+    font-size: 1.6rem;
+}
+
+/* -------------------------
+-------button default -----
+-------------------------- */
+.button{
+    padding:7px 15px;
+    color:var(--button-color);
+    background-color: var(--button-bg);
+    border:none;
+    border: 2px solid #cc0505;
+}
+button.button a{
+    color: var(--button-color);
+    text-transform: capitalize;
+}
+button.button a i{
+    margin: 0px 5px;
+    font-size: 1.2rem;
+}
+.button:hover{
+    border: 2px solid #cc0505;
+    background-color: var(--button-hover-bg);
+    transition: all .6s;
+
+}
+.button:hover a{
+    color:var(--button-hover-color);
+    transition: all .6s;
+  
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize;
+}
+
+li{
+    list-style: none;
+}
+/* header  */
+header{
+    height: 667px;
+    background-color: #040446;
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/*----------------- 
+navigation manus 
+--------------- */
+nav{
+    padding-top: 42px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.manuelist{
+    width: 53%;
+}
+.login-side{
+   width: 40%;
+   display: flex;
+   justify-content: flex-end;
+}
+.navbar-manu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-manu .nav-item{
+    list-style: none;
+}
+.navbar-manu .nav-item .nav-link{
+    line-height: 24px;
+    color: #ddd;
+}
+.nav-item:hover .nav-link{
+    color:var(--button-bg);
+    transition: all .6s;
+}
+
+
+/*-----------------
+ welcome-section
+--------------- */
+
+.welcome-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.welcome-content .welcome-title{
+    font-size: 6.4rem;
+    color: #ddd;
+    padding-bottom: 28px;
+}
+.welcome-banner img{
+    width: 100%;
+}
+
+
+/* ---------------
+player-section 
+--------------*/
+.player-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+.player-card img{
+    width: 100%;
 }
