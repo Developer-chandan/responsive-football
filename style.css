@@ -72,6 +72,7 @@ li{
 header{
     height: 667px;
     background-color: #040446;
+    margin-bottom: 7rem;
 }
 .container{
     width: 1160px;
@@ -130,6 +131,7 @@ nav{
     font-size: 6.4rem;
     color: #ddd;
     padding-bottom: 28px;
+    line-height: 80px;
 }
 .welcome-banner img{
     width: 100%;
@@ -139,12 +141,192 @@ nav{
 /* ---------------
 player-section 
 --------------*/
+#ourPlayers{
+    margin-bottom: 14.5rem;
+}
 .player-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap:3rem;
     
     
 }
 .player-card img{
     width: 100%;
 }
+.player-wrapper .player-card h1 {
+    font-size: 2.8rem;
+    padding: 10px 0px;
+    color: #7a7a7a;
+}
+
+.player-card {
+    box-shadow: 0px 0px 14px 8px #ddd;
+    padding: 15px;
+}
+
+.player-card p {
+    text-align: justify;
+    padding-bottom: 16px;
+    line-height: 26px;
+    color: #6d6a6a;
+}
+
+
+/*--------------- 
+clubactivites 
+------------------- */
+.clubactivites{
+    background-color: #efefef;
+    padding: 73px 0px;
+}
+.clubactivites-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+.activites-content h2 {
+    font-size: 2rem;
+    color: #4c4c4ce6;
+    padding-bottom: 20px;
+}
+
+.activites-content {
+    text-align: center;
+}
+
+.activities-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.clubactivites-wrapper .activities-box .activites-image{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.clubactivites-wrapper .activities-box .activites-image img{
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    border: 12px solid white;
+    transition: transform .6s;
+    transform: scale(1);
+
+}
+
+.clubactivites-wrapper .activities-box .activites-image:hover.activites-image img{
+    transform:scale(1.1);
+}
+
+
+
+
+/* ----------------------
+highlight setion start 
+----------------------- */
+#highlight{
+    overflow: hidden;
+}
+.highlight-wrappr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 60px;
+    ovr
+}
+.highlight-image img{
+    width: 100%;
+}
+.highlight-content h1 {
+    font-size: 4.8rem;
+    line-height: 60px;
+}
+.highlight-content p{
+    padding:10px 100px 30px 0px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------
+footer 
+----------- ---*/
+footer{
+    margin: 110px 0px 40px 0px;
+}
+.footer-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.site-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-logo img {
+    width: 31%;
+}
+
+.social-media-icons {margin: 0 auto;margin-top: 15px;margin-bottom: 5px;}
+
+ul.iconlist {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ul.iconlist .soicalicon {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+}
+
+ul.iconlist .socialicon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    place-items: center;
+    border-radius: 50%;
+    margin: 0px 7px;
+}
+
+ul.iconlist .socialicon a i {
+    font-size: 1.6rem;
+    color: #7e7e7e;
+}
+
+.footer-item-wrapper .copyright {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 0px;}
