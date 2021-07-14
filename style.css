@@ -445,13 +445,99 @@ ul.iconlist .socialicon a i {
 /*======================
  media query for tablate
 ====================== */
-@media only screen and (max-width:769px){
-    .player-wrapper{
-        background: red;
-        grid-template-columns: repeat(2,1fr);
+@media only screen and (max-width:768px) {
+    header{
+      height: 545px;
     }
-    .clubactivites-wrapper {
+   .container{
+       width: 100%;
+   }
+   .navbar{
+       padding: 0px 20px
+   }
+   .welcome-part{
+       display: flex;
+   }
+   .welcome-content .welcome-title{
+       font-size: 4.4rem;
+   }
+   .welcome-banner{
+       display: none;
+   }
+   .welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+   }
+   .welcome-content h1{
+       text-align: center;
+       font-size: 5rem;
+   }
+   .welcome-content button{
+       margin-top: 20px;
+   }
+   #ourPlayers {
+    margin-bottom: 0rem;
+}
+   
+   .player-wrapper,
+   .clubactivites-wrapper,
+   .coaches-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .coaches-title,
+   .manuelist{
+    width: 100%;
+   }
+  
+   .highlight-wrappr{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+   }
+   .highlight-content{
+       padding-bottom: 20px;
+   }
+}
+
+
+/*=====================
+ media query for mobile
+==================== */
+
+@media only screen and (max-width:450px){
+    nav{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .player-wrapper,
+    .clubactivites-wrapper,
+    .coaches-wrapper{
+     grid-template-columns: 1fr;
+    }
+    .coaches-title h1 {
+        font-size: 3.6rem;
         
-        grid-template-columns: repeat(2, 1fr);  
     }
+    .coaches-title p {
+      
+        padding: 10px 14px;
+    }
+    .highlight-content h1 {
+        font-size: 3.8rem;
+        line-height: 60px;
+    }
+    .highlight-content p {
+        padding: 10px 10px 30px 0px;
+       
+    }
+    footer {
+        margin: 11px 0px 40px 0px;
+    }
+
 }
