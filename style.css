@@ -487,7 +487,10 @@ ul.iconlist .socialicon a i {
    .coaches-wrapper{
     grid-template-columns: repeat(2, 1fr);
    }
-   
+   .coaches-boxes,
+   .activities-box{
+       margin-bottom: 20px;
+   }
    .coaches-title,
    .manuelist{
     width: 100%;
@@ -501,6 +504,9 @@ ul.iconlist .socialicon a i {
    .highlight-content{
        padding-bottom: 20px;
    }
+   footer {
+    margin: 30px 0px 40px 0px;
+ }
 }
 
 
@@ -520,6 +526,10 @@ ul.iconlist .socialicon a i {
     .coaches-wrapper{
      grid-template-columns: 1fr;
     }
+    .coaches-boxes,
+   .activities-box{
+       margin-bottom: 20px;
+   }
     .coaches-title h1 {
         font-size: 3.6rem;
         
